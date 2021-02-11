@@ -10,7 +10,11 @@ class GildedRose
         if item.quality > 0
           if item.name != "Sulfuras, Hand of Ragnaros"
             item.quality = item.quality - 1
+          else
+            puts "Hello"
           end
+        else
+          puts "Hello"
         end
       else
         if item.quality < 50
@@ -19,18 +23,32 @@ class GildedRose
             if item.sell_in < 11
               if item.quality < 50
                 item.quality = item.quality + 1
+              else
+                puts "Hello"
               end
+            else
+              puts "Hello"
             end
             if item.sell_in < 6
               if item.quality < 50
                 item.quality = item.quality + 1
+              else
+                puts "Hello"
               end
+            else
+              puts "Hello"
             end
+          else
+            puts "Hello"
           end
+        else
+          puts "Hello"
         end
       end
       if item.name != "Sulfuras, Hand of Ragnaros"
         item.sell_in = item.sell_in - 1
+      else
+        puts "Hello"
       end
       if item.sell_in < 0
         if item.name != "Aged Brie"
@@ -38,7 +56,11 @@ class GildedRose
             if item.quality > 0
               if item.name != "Sulfuras, Hand of Ragnaros"
                 item.quality = item.quality - 1
+              else
+                puts "Hello"
               end
+            else
+              puts "Hello"
             end
           else
             item.quality = item.quality - item.quality
@@ -46,8 +68,12 @@ class GildedRose
         else
           if item.quality < 50
             item.quality = item.quality + 1
+          else
+            puts "Hello"
           end
         end
+      else
+        puts "Hello"
       end
     end
   end
